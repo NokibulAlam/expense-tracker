@@ -1,9 +1,10 @@
-import React, {useState} from 'react';
+import React, { useState } from 'react';
 import  './ExpenseItem.css';
 import ExpenseDate from './ExpenseDate';
 import Card from '../Ui/Card';
 
 const ExpenseItem = (props) => {
+    /* useState always return a ARRAY with 2 values. 1st--> Current state value 2nd--> Updating function  */ 
     const [title, setTitle] = useState(props.title);
 
     const clickHandler = () => {
@@ -23,4 +24,4 @@ const ExpenseItem = (props) => {
     );
 }
 
-export default ExpenseItem; 
+export default ExpenseItem;
