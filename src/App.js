@@ -7,13 +7,13 @@ const DUMMY_EXPENSES = [
     id: 'e1',
     title: 'Toilet Paper',
     amount: 94.12,
-    date: new Date(2020, 7, 14),
+    date: new Date(2022, 7, 14),
   },
   {
     id: 'e2',
     title: 'New Desk (Wooden)',
     amount: 450,
-    date: new Date(2020, 5, 18),
+    date: new Date(2021, 5, 18),
   },
   {
     id: 'e3',
@@ -25,7 +25,7 @@ const DUMMY_EXPENSES = [
     id: 'e4',
     title: 'Tution Fees',
     amount: 1800,
-    date: new Date(2020, 5, 16),
+    date: new Date(2019, 5, 16),
   }
 ];
 
@@ -36,7 +36,9 @@ const App = () => {
     setExpenses((prevExpenses) => { 
       return [expense, ...prevExpenses]
     });
-  }
+  };
+
+  
  
   return (
     <div>
